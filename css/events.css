@@ -663,7 +663,8 @@ body{
     background-image: linear-gradient(to bottom,#eae5c969,#6cc6cb85);
     backdrop-filter: blur(5px);
     border-radius: 5px;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     z-index: 200;
 }
 .contactUs button{

@@ -96,7 +96,8 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".con_us").click(function(e){
         e.preventDefault();
-        var contactUs = $('.contactUs')
+        $('.contactUs').toggle();
+     
     });
   });
    
@@ -104,7 +105,8 @@ $(document).ready(function(){
   $(document).ready(function(){
     $(".contactUs button").click(function(e){
         e.preventDefault();
-        var contactUs = $('.contactUs')
+        $('.contactUs').toggle();
+      
     });
   });
 
