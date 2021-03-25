@@ -32,19 +32,19 @@
                 <!-- <button class="faWin"><i class="fa fa-window-close" aria-hidden="true"></i></button> -->
                 <img src="../img/logo3.png" alt="">
                 <h2>HOUSE JC</h2>
-                <div class="main">
+                <form class="main" method="POST" action="" >
                     <div class="mail">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h4>WITH MAIL</h4>
                     </div>
-
-                    <input type="text" placeholder="mail">
-                    <input type="text" placeholder="password">
-                    <input type="button" value="log in">
+                    <input type="text" class="account_login" name="account_login" placeholder="email or mobile number">
+                    <input type="text" class="pass_login" name="pass_login" placeholder="type in the password">
+                    <div class="errormsg_login"></div>
+                    <input type="submit" value="log in" class="loginSubmit" >
                     <p>or</p>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <a href="http://www.facebook.com.tw">WITH FACEBOOK</a>
-                </div>
+                </form>
                 <p>Culture, Soul and Architecture | HOUSE JC</p>
             </div>
         </div>
@@ -54,19 +54,20 @@
                 <button class="signup_close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
                 <img src="../img/logo3.png" alt="">
                 <h2>HOUSE JC</h2>
-                <div class="main">
+                <form class="main" method="POST" action="" >
                     <div class="mail">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h4>WITH MAIL</h4>
                     </div>
 
-                    <input type="text" placeholder="mail">
-                    <input type="text" placeholder="password">
-                    <input type="button" value="sign up">
+                    <input type="text" class="account" name="account" placeholder="email or mobile number">
+                    <input type="text" class="password" name="password" placeholder="type in the password">
+                    <div class="errormsg"></div>
+                    <input type="submit" value="sign up" class="btnSubmit" >
                     <p>or</p>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <a href="http://www.facebook.com.tw">WITH FACEBOOK</a>
-                </div>
+                </form>
                 <p>Culture, Soul and Architecture | HOUSE JC</p>
             </div>
         </div>
@@ -196,26 +197,30 @@
                 <p>TRAVEL WITH ARCHITECTURE IN TOKYO.<br>
                     2021/01/11~2021/01/16</p>
             </div>
-            <div class="intro">
+            <form class="intro">
                 <div class="event">
                     <p>EVENT</p>
-                    <input type="text" placeholder="" >
+                    <!-- <input type="text" placeholder="" > -->
+                    <select id="event">
+                        <option value="osaka">TRAVEL WITH ARCHITECTURE IN OSAKA.</option>
+                        <option value="tokyo">TRAVEL WITH ARCHITECTURE IN TOKYO.</option>
+                      </select>
                 </div>
                 <div class="name">
                     <p>NAME</p>
-                    <input type="text" placeholder="" >
+                    <input type="text" placeholder="ex.brain" >
                 </div>
                 <div class="phone">
                     <p>PHONE</p>
-                    <input type="text" placeholder="" >
+                    <input type="text" placeholder="09xxxxxxxx" >
                 </div>
                 <div class="mail">
                     <p>MAIL</p>
-                    <input type="text" placeholder="" >
+                    <input type="text" placeholder="xxx@gmail.com" >
                 </div>
                 <button type="submit">summit</button>
                 
-            </div>
+            </form>
             <p class="cul">Culture, Soul and Architecture | HOUSE JC</p>
             
         </div>

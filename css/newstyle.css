@@ -13,6 +13,14 @@ body{
 
 /* ----------------header begin------------------ */
 /* --------------header begin------------ */
+.errormsg{
+    font-size: 10px;
+    color: rgb(219, 136, 136);
+}
+.errormsg_login{
+    font-size: 10px;
+    color: rgb(219, 136, 136);
+}
 .menu{
     display: none;
 }
@@ -20,6 +28,7 @@ body{
 .menu .menu_close .fa-window-close{
     font-size: 18px;
 }
+
 .login-el .login_close{
     border: none;
     background-color: rgba(255, 255, 255, 0);
@@ -58,6 +67,10 @@ body{
     box-sizing: border-box;
     /* outline: 1px solid red; */
     margin: 0 auto;
+    z-index: 10;
+}
+.login_index{
+    
 }
 .header .left{
     display: flex;
@@ -208,9 +221,9 @@ body{
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 2;
+    z-index: 200;
     border-radius: 10px;
-    opacity: 0;
+    /* opacity: 0; */
     box-shadow: 1px 1px  #7070703a;
 }
 .login-el .container{
@@ -288,7 +301,7 @@ body{
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 2;
+    z-index: 99;
     border-radius: 10px;
     opacity: 0;
     box-shadow: 1px 1px  #7070703a;
@@ -582,7 +595,7 @@ body{
            /* background-color:rgba(245, 245, 245, 0.89); */
            background-image: linear-gradient(to bottom,#eae5c9,#6cc6cb);
            /* border-radius: 10px; */
-           z-index: 10;
+           z-index: 20;
            /* outline: 1px solid red; */
            position: fixed;
            /* left: 5%;

@@ -31,19 +31,20 @@
                 <!-- <button class="faWin"><i class="fa fa-window-close" aria-hidden="true"></i></button> -->
                 <img src="../img/logo3.png" alt="">
                 <h2>HOUSE JC</h2>
-                <div class="main">
+                <form class="main" method="POST" action="" >
                     <div class="mail">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h4>WITH MAIL</h4>
                     </div>
                     
-                    <input type="text" placeholder="mail">
-                    <input type="text" placeholder="password">
-                    <input type="button" value="log in">
+                    <input type="text" class="account_login" name="account_login" placeholder="email or mobile number">
+                    <input type="text" class="pass_login" name="pass_login" placeholder="type in the password">
+                    <div class="errormsg_login"></div>
+                    <input type="submit" value="log in" class="loginSubmit" >
                     <p>or</p>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <a href="http://www.facebook.com.tw">WITH FACEBOOK</a>
-                </div>
+                </form>
                 <p>Culture, Soul and Architecture | HOUSE JC</p>
             </div>
         </div>
@@ -53,19 +54,19 @@
                 <button class="signup_close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
                 <img src="../img/logo3.png" alt="">
                 <h2>HOUSE JC</h2>
-                <div class="main">
+                <form class="main" method="POST" action="" >
                     <div class="mail">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h4>WITH MAIL</h4>
-                    </div>
-                    
-                    <input type="text" placeholder="mail">
-                    <input type="text" placeholder="password">
-                    <input type="button" value="sign up">
+                    </div>           
+                    <input type="text"  class="account" name="account" placeholder="email or mobile number">
+                    <input type="text" class="password" name="password" placeholder="type in the password">
+                    <div class="errormsg"></div>
+                    <input type="submit" value="sign up" class="btnSubmit" >
                     <p>or</p>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <a href="http://www.facebook.com.tw">WITH FACEBOOK</a>
-                </div>
+                </form>
                 <p>Culture, Soul and Architecture | HOUSE JC</p>
             </div>
         </div>

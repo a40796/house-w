@@ -14,6 +14,14 @@ body{
 } 
 
 /* --------------header begin------------ */
+.errormsg{
+    font-size: 10px;
+    color: rgb(219, 136, 136);
+}
+.errormsg_login{
+    font-size: 10px;
+    color: rgb(219, 136, 136);
+}
 .menu{
     display: none;
 }
@@ -185,9 +193,10 @@ body{
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 2;
+    z-index: 200;
     border-radius: 10px;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     box-shadow: 1px 1px  #7070703a;
 }
 .login-el .container{
@@ -265,9 +274,10 @@ body{
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 2;
+    z-index: 99;
     border-radius: 10px;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     box-shadow: 1px 1px  #7070703a;
 }
 .signup-el .container{

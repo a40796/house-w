@@ -58,25 +58,14 @@ $(document).ready(function(){
         // alert('qqqqqq')
         e.preventDefault();
         var logInEl = $('.login-el');
-        var wrap = $('.wrap');
-        
-        if(logInEl.css('opacity','0' )){
-            logInEl.css('opacity','1');
-            // wrap.css('opacity','.2');   
-            // wrap.css('filter','grayscale(1)');
-            
-        };
+        var body = $('body');
         logInEl.toggle();
-        // logIn.toggle();
+       
     });
     $('.login_close').click(function(e){
         e.preventDefault();
         // alert('qqqqq');
         var logInEl = $('.login-el');
-        if(logInEl.css('opacity','1')){
-            logInEl.css('opacity','0');
-            // wrap.css('opacity','1');
-        };
         logInEl.toggle();
     });
      
@@ -87,23 +76,16 @@ $(document).ready(function(){
   
   $(document).ready(function(){
     $(".signup").click(function(e){
+        
         // alert('qqqqqq')
         e.preventDefault();
         var signupEl = $('.signup-el');
-        // signupEl.toggle();
-        if(signupEl.css('opacity','0' )){
-            signupEl.css('opacity','1');
-        };
         signupEl.toggle();
     });
     $('.signup_close').click(function(e){
         e.preventDefault();
         // alert('qqqqq');
         var signupEl = $('.signup-el');
-        if(signupEl.css('opacity','1')){
-            signupEl.css('opacity','0');
-            // wrap.css('opacity','1');
-        };
         signupEl.toggle();
     });
     
@@ -115,9 +97,6 @@ $(document).ready(function(){
     $(".con_us").click(function(e){
         e.preventDefault();
         var contactUs = $('.contactUs')
-        if(contactUs.css('opacity','0')){
-            contactUs.css('opacity','1');
-        };   
     });
   });
    
@@ -126,8 +105,59 @@ $(document).ready(function(){
     $(".contactUs button").click(function(e){
         e.preventDefault();
         var contactUs = $('.contactUs')
-        if(contactUs.css('opacity','1')){
-            contactUs.css('opacity','0');
-        };   
     });
   });
+
+  //註冊帳號密碼驗證
+
+    $('.btnSubmit').on('click',function(event){
+        event.preventDefault();
+        let errormsg =$('.errormsg');
+        if ($('.account').val().trim().length < 1) {
+            errormsg.html('email or mobile number');
+            $('.account').focus();
+            return;
+        }
+            var reg = /^1[34578]\\d{9}$/;
+            var reg2 = /^[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$/;
+            var input2 = $('.account').val();
+            var input1 = $('.account').val();
+            if(!reg.test(input1)&&!reg2.test(input2)){
+                errormsg.html('Please enter the correct email or phone format!')
+            }
+
+        if ($('.password').val().trim().length < 1) {
+            errormsg.html('type in the password');
+            $('.password').focus();
+            return;
+        }
+        errormsg.html('Registered successfully, redirecting');
+
+    })
+
+  //登入帳號密碼驗證
+
+    $('.loginSubmit').on('click',function(event){
+        event.preventDefault();
+        let errormsg_login =$('.errormsg_login');
+        if ($('.account_login').val().trim().length < 1) {
+            errormsg_login.html('email or mobile number');
+            $('.account_login').focus();
+            return;
+        }
+            var reg = /^1[34578]\\d{9}$/;
+            var reg2 = /^[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$/;
+            var input2 = $('.account_login').val();
+            var input1 = $('.account_login').val();
+            if(!reg.test(input1)&&!reg2.test(input2)){
+                errormsg.html('Please enter the correct email or phone format!')
+            }
+
+        if ($('.pass_login').val().trim().length < 1) {
+            errormsg_login.html('type in the password');
+            $('.pass_login').focus();
+            return;
+        }
+        errormsg_login.html('Registered successfully, redirecting');
+
+    })

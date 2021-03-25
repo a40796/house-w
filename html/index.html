@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <script type="text/javascript" src="jquery.fancybox.js?v=2.1.2"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <!-- ------------------- menu  --------------------  -->
     <div class="menu" >
         <button class="menu_close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
@@ -49,19 +52,19 @@
                 <!-- <button class="faWin"><i class="fa fa-window-close" aria-hidden="true"></i></button> -->
                 <img src="../img/logo3.png" alt="">
                 <h2>HOUSE JC</h2>
-                <div class="main">
+                <form class="main" method="POST" action="" >
                     <div class="mail">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h4>WITH MAIL</h4>
-                    </div>
-                    
-                    <input type="text" placeholder="xxx@gmail.com">
-                    <input type="text" placeholder="password">
-                    <input type="button" value="log in">
+                    </div>  
+                    <input type="text" class="account_login" name="account_login" placeholder="email or mobile number">
+                    <input type="text" class="pass_login" name="pass_login" placeholder="type in the password">
+                    <div class="errormsg_login"></div>
+                    <input type="submit" value="log in" class="loginSubmit">
                     <p>or</p>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <a href="http://www.facebook.com.tw">WITH FACEBOOK</a>
-                </div>
+                </form>
                 <p>Culture, Soul and Architecture | HOUSE JC</p>
             </div>
         </div>
@@ -71,18 +74,19 @@
             <div class="container">
                 <img src="../img/logo3.png" alt="">
                 <h2>HOUSE JC</h2>
-                <div class="main">
+                <form class="main" method="POST" action="" >
                     <div class="mail">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                         <h4>WITH MAIL</h4>
                     </div>
-                    <input type="text" placeholder="xxx@gmail.com">
-                    <input type="text" placeholder="password">
-                    <input type="button" value="sign up">
+                    <input type="text" class="account" name="account" placeholder="email or mobile number">
+                    <input type="text" class="password" name="password" placeholder="type in the password">
+                    <div class="errormsg"></div>
+                    <input type="submit" value="sign up" class="btnSubmit" >
                     <p>or</p>
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <a href="http://www.facebook.com.tw">WITH FACEBOOK</a>
-                </div>
+                </form>
                 <p>Culture, Soul and Architecture | HOUSE JC</p>
             </div>
         </div>
@@ -274,7 +278,9 @@
 
     </div>
     </div>
+
     <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 </body>
 
 </html>
