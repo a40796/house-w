@@ -546,7 +546,6 @@ body{
 .intro2 ul li a:hover{
     color: #036eb8;
 }
-}
 .intro h2{
     margin-bottom: 70px;
 }
@@ -1125,6 +1124,9 @@ body{
       .title h2{
         /* outline: 1px solid red; */
         margin-top: -60px;
+    }
+    .contactUs{
+        width: 80vw;
     }
     /* main */
     .main{
